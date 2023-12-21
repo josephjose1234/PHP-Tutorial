@@ -1150,25 +1150,194 @@
         <p>A regular expression is a sequence of characters that forms a search pattern. When you search for data in a text, you can use this search pattern to describe what you are searching for.
             A regular expression can be a single character, or a more complicated pattern.
             Regular expressions can be used to perform all types of text search and text replace operations.</p>
-            <table>
-        <tr>
-            <th>Function</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>preg_match()</td>
-            <td>Returns 1 if the pattern was found in the string and 0 if not</td>
-        </tr>
-        <tr>
-            <td>preg_match_all()</td>
-            <td>Returns the number of times the pattern was found in the string, which may also be 0</td>
-        </tr>
-        <tr>
-            <td>preg_replace()</td>
-            <td>Returns a new string where matched patterns have been replaced with another string</td>
-        </tr>
-    </table>
-        </section>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>preg_match()</td>
+                <td>Returns 1 if the pattern was found in the string and 0 if not</td>
+            </tr>
+            <tr>
+                <td>preg_match_all()</td>
+                <td>Returns the number of times the pattern was found in the string, which may also be 0</td>
+            </tr>
+            <tr>
+                <td>preg_replace()</td>
+                <td>Returns a new string where matched patterns have been replaced with another string</td>
+            </tr>
+        </table>
+    </section>
+    <section id="">
+        <h3>PHP Date and Time</h3>
+        <p>The PHP date() function is used to format a date and/or a time.</p>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Live Example</th>
+            </tr>
+            <tr>
+                <td>date()</td>
+                <td>Returns the current date and time</td>
+                <td> <?php
+                        // Set the time zone to 'Asia/Kolkata' (Indian Standard Time)
+                        // you an change the 'Asia/Kolkata' to your time zone
+                        date_default_timezone_set('Asia/Kolkata');
+
+                        // Get the current date and time
+                        $currentDateTime = date('Y-m-d H:i:s');
+
+                        // Display the current date and time
+                        echo "Current Date and Time: $currentDateTime";
+                        ?></td>
+            </tr>
+            <tr>
+                <td>time()</td>
+                <td>Returns the current Unix timestamp</td>
+                <td><?php
+
+                    date_default_timezone_set('Asia/Kolkata');
+                    // Get the current Unix timestamp
+                    $currentTimestamp = time();
+
+                    // Convert Unix timestamp to a readable date format
+                    $currentDate = date('Y-m-d H:i:s', $currentTimestamp);
+
+                    // Display the current Unix timestamp
+                    echo "<p>Current Unix Timestamp: $currentTimestamp</p>";
+
+                    // Display the current date and time
+                    echo "<p>Current Date and Time: $currentDate</p>";
+                    ?></td>
+            </tr>
+            <tr>
+                <td>strtotime()</td>
+                <td>Parses a time/date string into a Unix timestamp</td>
+                <td> <?php
+                        // Get the current date and time in a specific format
+                        $formattedDate = "2023-12-31 15:30:00";
+
+                        // Convert the formatted date to a Unix timestamp using strtotime
+                        $timestamp = strtotime($formattedDate);
+
+                        // Display the formatted date, Unix timestamp, and the corresponding date and time
+                        echo "<p>Formatted Date: $formattedDate</p>";
+                        echo "<p>Unix Timestamp: $timestamp</p>";
+                        echo "<p>Converted Date and Time: " . date('Y-m-d H:i:s', $timestamp) . "</p>";
+                        ?></td>
+            </tr>
+            <tr>
+                <td>mktime()</td>
+                <td>Returns the Unix timestamp for a date</td>
+                <td><?php
+                    // Create a Unix timestamp for December 31, 2023, 15:30:00
+                    $timestamp = mktime(15, 30, 0, 12, 31, 2023);
+
+                    // Display the Unix timestamp and the corresponding date and time
+                    echo "<p>Unix Timestamp: $timestamp</p>";
+                    echo "<p>Converted Date and Time: " . date('Y-m-d H:i:s', $timestamp) . "</p>";
+                    ?></td>
+            </tr>
+            <tr>
+                <td>strftime()</td>
+                <td>Formats a local time/date according to locale settings</td>
+                <td><?php
+                    // Create a Unix timestamp for December 31, 2023, 15:30:00
+                    $timestamp = mktime(15, 30, 0, 12, 31, 2023);
+
+                    // Display the Unix timestamp and the corresponding date and time
+                    echo "<p>Unix Timestamp: $timestamp</p>";
+                    echo "<p>Converted Date and Time: " . date('Y-m-d H:i:s', $timestamp) . "</p>";
+                    ?></td>
+            </tr>
+            <tr>
+                <td>gmdate()</td>
+                <td>Returns the current date and time in Greenwich Mean Time (GMT)</td>
+                <td><?php
+                    // Get the current GMT date and time
+                    $currentDateTime = gmdate('Y-m-d H:i:s');
+
+                    // Display the current GMT date and time
+                    echo "<p>Current GMT Date and Time: $currentDateTime</p>";
+                    ?></td>
+            </tr>
+            <tr>
+                <td>date_default_timezone_set()</td>
+                <td>Sets the default timezone used by all date/time functions</td>
+                <td><?php date_default_timezone_set('America/New_York'); //SETTING TIMEZONE TO AMERICA/NEWYORK
+                    echo date('Y-m-d H:i:s'); ?></td>
+            </tr>
+            <tr>
+                <td>date_create()</td>
+                <td>Returns a new DateTime object</td>
+                <td><?php
+                    // Create a new DateTime object representing the current date and time
+                    $currentDateTime = date_create();
+
+                    // Format the DateTime object
+                    $formattedDate = date_format($currentDateTime, 'Y-m-d H:i:s');
+
+                    // Display the formatted date and time
+                    echo "<p>Current Date and Time: $formattedDate</p>";
+                    ?></td>
+            </tr>
+            <tr>
+                <td>date_format()</td>
+                <td>Formats a DateTime object</td>
+                <td> <?php
+                        // Create a new DateTime object representing the current date and time
+                        $currentDateTime = date_create();
+
+                        // Format the DateTime object using date_format
+                        $formattedDate = date_format($currentDateTime, 'Y-m-d H:i:s');
+
+                        // Display the formatted date and time
+                        echo "<p>Current Date and Time: $formattedDate</p>";
+                        ?></td>
+            </tr>
+            <tr>
+                <td>getdate()</td>
+                <td>Returns an associative array containing the date information</td>
+                <td><?php
+                    // Get the current date and time information as an associative array
+                    $dateInfo = getdate();
+
+                    // Display the elements of the date information
+                    echo "<p>Year: {$dateInfo['year']}</p>";
+                    echo "<p>Month: {$dateInfo['mon']}</p>";
+                    echo "<p>Day: {$dateInfo['mday']}</p>";
+                    echo "<p>Hour: {$dateInfo['hours']}</p>";
+                    echo "<p>Minute: {$dateInfo['minutes']}</p>";
+                    echo "<p>Second: {$dateInfo['seconds']}</p>";
+                    echo "<p>Weekday: {$dateInfo['weekday']}</p>";
+                    echo "<p>Month name: {$dateInfo['month']}</p>";
+                    ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="">
+        <h3>PHP Include Files</h3>
+        <p>The include (or require) statement takes all the text/code/markup that exists in the specified file and copies it into the file that uses the include statement.
+            Including files is very useful when you want to include the same PHP, HTML, or text on multiple pages of a website.</p>
+    </section>
+    <section id="">
+        <h3></h3>
+        <p></p>
+    </section>
+    <section id="">
+        <h3></h3>
+        <p></p>
+    </section>
+    <section id="">
+        <h3></h3>
+        <p></p>
+    </section>
+    <section id="">
+        <h3></h3>
+        <p></p>
+    </section>
     <section id="">
         <h3></h3>
         <p></p>
