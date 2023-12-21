@@ -308,67 +308,76 @@
     <section id="11">
         <h3>PHP Math</h3>
         <table>
-        <tr>
-            <th>Function</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>abs()</td>
-            <td>Returns the absolute value of a number.</td>
-            <td><code>$result = abs(-5);</code></td>
-            <td><?php $result = abs(-5); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>sqrt()</td>
-            <td>Returns the square root of a number.</td>
-            <td><code>$result = sqrt(25);</code></td>
-            <td><?php $result = sqrt(25); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>pow()</td>
-            <td>Returns the value of a base raised to the power of an exponent.</td>
-            <td><code>$result = pow(2, 3);</code></td>
-            <td><?php $result = pow(2, 3); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>round()</td>
-            <td>Rounds a floating-point number to the nearest integer.</td>
-            <td><code>$result = round(4.6);</code></td>
-            <td><?php $result = round(4.6); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>ceil()</td>
-            <td>Rounds a number up to the nearest integer.</td>
-            <td><code>$result = ceil(4.2);</code></td>
-            <td><?php $result = ceil(4.2); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>floor()</td>
-            <td>Rounds a number down to the nearest integer.</td>
-            <td><code>$result = floor(4.8);</code></td>
-            <td><?php $result = floor(4.8); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>rand()</td>
-            <td>Generates a random integer.</td>
-            <td><code>$result = rand(1, 100);</code></td>
-            <td><?php $result = rand(1, 100); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>min()</td>
-            <td>Returns the lowest value in an array or a list of arguments.</td>
-            <td><code>$result = min(3, 8, 1, 6);</code></td>
-            <td><?php $result = min(3, 8, 1, 6); echo $result; ?></td>
-        </tr>
-        <tr>
-            <td>max()</td>
-            <td>Returns the highest value in an array or a list of arguments.</td>
-            <td><code>$result = max(3, 8, 1, 6);</code></td>
-            <td><?php $result = max(3, 8, 1, 6); echo $result; ?></td>
-        </tr>
-    </table>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>abs()</td>
+                <td>Returns the absolute value of a number.</td>
+                <td><code>$result = abs(-5);</code></td>
+                <td><?php $result = abs(-5);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>sqrt()</td>
+                <td>Returns the square root of a number.</td>
+                <td><code>$result = sqrt(25);</code></td>
+                <td><?php $result = sqrt(25);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>pow()</td>
+                <td>Returns the value of a base raised to the power of an exponent.</td>
+                <td><code>$result = pow(2, 3);</code></td>
+                <td><?php $result = pow(2, 3);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>round()</td>
+                <td>Rounds a floating-point number to the nearest integer.</td>
+                <td><code>$result = round(4.6);</code></td>
+                <td><?php $result = round(4.6);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>ceil()</td>
+                <td>Rounds a number up to the nearest integer.</td>
+                <td><code>$result = ceil(4.2);</code></td>
+                <td><?php $result = ceil(4.2);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>floor()</td>
+                <td>Rounds a number down to the nearest integer.</td>
+                <td><code>$result = floor(4.8);</code></td>
+                <td><?php $result = floor(4.8);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>rand()</td>
+                <td>Generates a random integer.</td>
+                <td><code>$result = rand(1, 100);</code></td>
+                <td><?php $result = rand(1, 100);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>min()</td>
+                <td>Returns the lowest value in an array or a list of arguments.</td>
+                <td><code>$result = min(3, 8, 1, 6);</code></td>
+                <td><?php $result = min(3, 8, 1, 6);
+                    echo $result; ?></td>
+            </tr>
+            <tr>
+                <td>max()</td>
+                <td>Returns the highest value in an array or a list of arguments.</td>
+                <td><code>$result = max(3, 8, 1, 6);</code></td>
+                <td><?php $result = max(3, 8, 1, 6);
+                    echo $result; ?></td>
+            </tr>
+        </table>
     </section>
     <section id="12">
         <h3>PHP Constants</h3>
@@ -377,436 +386,793 @@
     <section id="13">
         <h3>PHP Arithemetic Operations</h3>
         <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>PHP Code</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>+</td>
-            <td>Addition</td>
-            <td><code>&lt;?php $x = 5; $y = 3; echo $x + $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 3; echo $x + $y; ?></td>
-        </tr>
-        <tr>
-            <td>-</td>
-            <td>Subtraction</td>
-            <td><code>&lt;?php $x = 5; $y = 3; echo $x - $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 3; echo $x - $y; ?></td>
-        </tr>
-        <tr>
-            <td>*</td>
-            <td>Multiplication</td>
-            <td><code>&lt;?php $x = 5; $y = 3; echo $x * $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 3; echo $x * $y; ?></td>
-        </tr>
-        <tr>
-            <td>/</td>
-            <td>Division</td>
-            <td><code>&lt;?php $x = 6; $y = 2; echo $x / $y; ?&gt;</code></td>
-            <td><?php $x = 6; $y = 2; echo $x / $y; ?></td>
-        </tr>
-        <tr>
-            <td>%</td>
-            <td>Modulus</td>
-            <td><code>&lt;?php $x = 8; $y = 3; echo $x % $y; ?&gt;</code></td>
-            <td><?php $x = 8; $y = 3; echo $x % $y; ?></td>
-        </tr>
-        <tr>
-            <td>**</td>
-            <td>Exponentiation</td>
-            <td><code>&lt;?php $x = 2; $y = 3; echo $x ** $y; ?&gt;</code></td>
-            <td><?php $x = 2; $y = 3; echo $x ** $y; ?></td>
-        </tr>
-    </table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>PHP Code</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+                <td><code>&lt;?php $x = 5; $y = 3; echo $x + $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 3;
+                    echo $x + $y; ?></td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+                <td><code>&lt;?php $x = 5; $y = 3; echo $x - $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 3;
+                    echo $x - $y; ?></td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td><code>&lt;?php $x = 5; $y = 3; echo $x * $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 3;
+                    echo $x * $y; ?></td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+                <td><code>&lt;?php $x = 6; $y = 2; echo $x / $y; ?&gt;</code></td>
+                <td><?php $x = 6;
+                    $y = 2;
+                    echo $x / $y; ?></td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus</td>
+                <td><code>&lt;?php $x = 8; $y = 3; echo $x % $y; ?&gt;</code></td>
+                <td><?php $x = 8;
+                    $y = 3;
+                    echo $x % $y; ?></td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Exponentiation</td>
+                <td><code>&lt;?php $x = 2; $y = 3; echo $x ** $y; ?&gt;</code></td>
+                <td><?php $x = 2;
+                    $y = 3;
+                    echo $x ** $y; ?></td>
+            </tr>
+        </table>
     </section>
     <section id="14">
         <h3>PHP Assignment Operators</h3>
         <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>PHP Code</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>=</td>
-            <td>Assignment</td>
-            <td><code>&lt;?php $x = $y; ?&gt;</code></td>
-            <td><?php $x = 10;$y=$x ; echo $x; ?></td>
-        </tr>
-        <tr>
-            <td>+=</td>
-            <td>Addition Assignment</td>
-            <td><code>&lt;?php $x += $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 3; $x += $y; echo $x; ?></td>
-        </tr>
-        <tr>
-            <td>-=</td>
-            <td>Subtraction Assignment</td>
-            <td><code>&lt;?php $x -= $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 3; $x -= $y; echo $x; ?></td>
-        </tr>
-        <tr>
-            <td>*=</td>
-            <td>Multiplication Assignment</td>
-            <td><code>&lt;?php $x *= $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 3; $x *= $y; echo $x; ?></td>
-        </tr>
-        <tr>
-            <td>/=</td>
-            <td>Division Assignment</td>
-            <td><code>&lt;?php $x /= $y; ?&gt;</code></td>
-            <td><?php $x = 6; $y = 2; $x /= $y; echo $x; ?></td>
-        </tr>
-        <tr>
-            <td>%=</td>
-            <td>Modulus Assignment</td>
-            <td><code>&lt;?php $x %= $y; ?&gt;</code></td>
-            <td><?php $x = 8; $y = 3; $x %= $y; echo $x; ?></td>
-        </tr>
-    </table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>PHP Code</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>=</td>
+                <td>Assignment</td>
+                <td><code>&lt;?php $x = $y; ?&gt;</code></td>
+                <td><?php $x = 10;
+                    $y = $x;
+                    echo $x; ?></td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>Addition Assignment</td>
+                <td><code>&lt;?php $x += $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 3;
+                    $x += $y;
+                    echo $x; ?></td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>Subtraction Assignment</td>
+                <td><code>&lt;?php $x -= $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 3;
+                    $x -= $y;
+                    echo $x; ?></td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>Multiplication Assignment</td>
+                <td><code>&lt;?php $x *= $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 3;
+                    $x *= $y;
+                    echo $x; ?></td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>Division Assignment</td>
+                <td><code>&lt;?php $x /= $y; ?&gt;</code></td>
+                <td><?php $x = 6;
+                    $y = 2;
+                    $x /= $y;
+                    echo $x; ?></td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>Modulus Assignment</td>
+                <td><code>&lt;?php $x %= $y; ?&gt;</code></td>
+                <td><?php $x = 8;
+                    $y = 3;
+                    $x %= $y;
+                    echo $x; ?></td>
+            </tr>
+        </table>
     </section>
     <section id="14">
         <h3>PHP Comparison Operators</h3>
         <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>==</td>
-            <td>Equal</td>
-            <td><code>&lt;?php $x = 5; $y = 5; echo $x == $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 5; echo $x == $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>===</td>
-            <td>Identical</td>
-            <td><code>&lt;?php $x = 5; $y = '5'; echo $x === $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = '5'; echo $x === $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>!=</td>
-            <td>Not equal</td>
-            <td><code>&lt;?php $x = 5; $y = 10; echo $x != $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 10; echo $x != $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&lt;&gt;</td>
-            <td>Not equal</td>
-            <td><code>&lt;?php $x = 5; $y = 10; echo $x <> $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 10; echo $x <> $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>!==</td>
-            <td>Not identical</td>
-            <td><code>&lt;?php $x = 5; $y = '5'; echo $x !== $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = '5'; echo $x !== $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&gt;</td>
-            <td>Greater than</td>
-            <td><code>&lt;?php $x = 10; $y = 5; echo $x > $y; ?&gt;</code></td>
-            <td><?php $x = 10; $y = 5; echo $x > $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&lt;</td>
-            <td>Less than</td>
-            <td><code>&lt;?php $x = 5; $y = 10; echo $x < $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 10; echo $x < $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&gt;=</td>
-            <td>Greater than or equal to</td>
-            <td><code>&lt;?php $x = 10; $y = 5; echo $x >= $y; ?&gt;</code></td>
-            <td><?php $x = 10; $y = 5; echo $x >= $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&lt;=</td>
-            <td>Less than or equal to</td>
-            <td><code>&lt;?php $x = 5; $y = 10; echo $x <= $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 10; echo $x <= $y ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&lt;=&gt;</td>
-            <td>Spaceship</td>
-            <td><code>&lt;?php $x = 5; $y = 5; echo $x <=> $y; ?&gt;</code></td>
-            <td><?php $x = 5; $y = 5; echo $x <=> $y; ?></td>
-        </tr>
-    </table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>Equal</td>
+                <td><code>&lt;?php $x = 5; $y = 5; echo $x == $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 5;
+                    echo $x == $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>===</td>
+                <td>Identical</td>
+                <td><code>&lt;?php $x = 5; $y = '5'; echo $x === $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = '5';
+                    echo $x === $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>Not equal</td>
+                <td><code>&lt;?php $x = 5; $y = 10; echo $x != $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 10;
+                    echo $x != $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&lt;&gt;</td>
+                <td>Not equal</td>
+                <td><code>&lt;?php $x = 5; $y = 10; echo $x <> $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 10;
+                    echo $x <> $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>!==</td>
+                <td>Not identical</td>
+                <td><code>&lt;?php $x = 5; $y = '5'; echo $x !== $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = '5';
+                    echo $x !== $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>Greater than</td>
+                <td><code>&lt;?php $x = 10; $y = 5; echo $x > $y; ?&gt;</code></td>
+                <td><?php $x = 10;
+                    $y = 5;
+                    echo $x > $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>Less than</td>
+                <td><code>&lt;?php $x = 5; $y = 10; echo $x < $y; ?&gt;</code>
+                </td>
+                <td><?php $x = 5;
+                    $y = 10;
+                    echo $x < $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&gt;=</td>
+                <td>Greater than or equal to</td>
+                <td><code>&lt;?php $x = 10; $y = 5; echo $x >= $y; ?&gt;</code></td>
+                <td><?php $x = 10;
+                    $y = 5;
+                    echo $x >= $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>Less than or equal to</td>
+                <td><code>&lt;?php $x = 5; $y = 10; echo $x <= $y; ?&gt;</code>
+                </td>
+                <td><?php $x = 5;
+                    $y = 10;
+                    echo $x <= $y ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&lt;=&gt;</td>
+                <td>Spaceship</td>
+                <td><code>&lt;?php $x = 5; $y = 5; echo $x <=> $y; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    $y = 5;
+                    echo $x <=> $y; ?></td>
+            </tr>
+        </table>
     </section>
     <section id="15">
         <h3>PHP Increment and Decrement</h3>
         <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>++$x</td>
-            <td>Pre-increment</td>
-            <td><code>&lt;?php $x = 5; echo ++$x; ?&gt;</code></td>
-            <td><?php $x = 5; echo ++$x; ?></td>
-        </tr>
-        <tr>
-            <td>$x++</td>
-            <td>Post-increment</td>
-            <td><code>&lt;?php $x = 5; echo $x++; ?&gt;</code></td>
-            <td><?php $x = 5; echo $x++; ?></td>
-        </tr>
-        <tr>
-            <td>--$x</td>
-            <td>Pre-decrement</td>
-            <td><code>&lt;?php $x = 5; echo --$x; ?&gt;</code></td>
-            <td><?php $x = 5; echo --$x; ?></td>
-        </tr>
-        <tr>
-            <td>$x--</td>
-            <td>Post-decrement</td>
-            <td><code>&lt;?php $x = 5; echo $x--; ?&gt;</code></td>
-            <td><?php $x = 5; echo $x--; ?></td>
-        </tr>
-    </table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>++$x</td>
+                <td>Pre-increment</td>
+                <td><code>&lt;?php $x = 5; echo ++$x; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    echo ++$x; ?></td>
+            </tr>
+            <tr>
+                <td>$x++</td>
+                <td>Post-increment</td>
+                <td><code>&lt;?php $x = 5; echo $x++; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    echo $x++; ?></td>
+            </tr>
+            <tr>
+                <td>--$x</td>
+                <td>Pre-decrement</td>
+                <td><code>&lt;?php $x = 5; echo --$x; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    echo --$x; ?></td>
+            </tr>
+            <tr>
+                <td>$x--</td>
+                <td>Post-decrement</td>
+                <td><code>&lt;?php $x = 5; echo $x--; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    echo $x--; ?></td>
+            </tr>
+        </table>
     </section>
     <section id="16">
-    <h3>PHP Logical Opertators</h3>
-    <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>and</td>
-            <td>And</td>
-            <td><code>&lt;?php $x = true; $y = false; echo ($x and $y) ? 'true' : 'false'; ?&gt;</code></td>
-            <td><?php $x = true; $y = false; echo ($x and $y) ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>or</td>
-            <td>Or</td>
-            <td><code>&lt;?php $x = true; $y = false; echo ($x or $y) ? 'true' : 'false'; ?&gt;</code></td>
-            <td><?php $x = true; $y = false; echo ($x or $y) ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>xor</td>
-            <td>Xor</td>
-            <td><code>&lt;?php $x = true; $y = false; echo ($x xor $y) ? 'true' : 'false'; ?&gt;</code></td>
-            <td><?php $x = true; $y = false; echo ($x xor $y) ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>&&</td>
-            <td>And</td>
-            <td><code>&lt;?php $x = true; $y = false; echo ($x && $y) ? 'true' : 'false'; ?&gt;</code></td>
-            <td><?php $x = true; $y = false; echo ($x && $y) ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>||</td>
-            <td>Or</td>
-            <td><code>&lt;?php $x = true; $y = false; echo ($x || $y) ? 'true' : 'false'; ?&gt;</code></td>
-            <td><?php $x = true; $y = false; echo ($x || $y) ? 'true' : 'false'; ?></td>
-        </tr>
-        <tr>
-            <td>!</td>
-            <td>Not</td>
-            <td><code>&lt;?php $x = true; echo !$x ? 'true' : 'false'; ?&gt;</code></td>
-            <td><?php $x = true; echo !$x ? 'true' : 'false'; ?></td>
-        </tr>
-    </table>
-</section>
-<section id="17">
-    <h3>PHP Array Operators</h3>
-    <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>+</td>
-            <td>Union</td>
-            <td><code>&lt;?php $x = array("a", "b", "c"); $y = array(1, 2, 3); print_r($x + $y); ?&gt;</code></td>
-            <td><?php $x = array("a", "b", "c"); $y = array(1, 2, 3); print_r($x + $y); ?></td>
-        </tr>
-        <tr>
-            <td>==</td>
-            <td>Equality</td>
-            <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("b" => 2, "a" => 1); var_dump($x == $y); ?&gt;</code></td>
-            <td><?php $x = array("a" => 1, "b" => 2); $y = array("b" => 2, "a" => 1); var_dump($x == $y); ?></td>
-        </tr>
-        <tr>
-            <td>===</td>
-            <td>Identity</td>
-            <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("b" => 2, "a" => 1); var_dump($x === $y); ?&gt;</code></td>
-            <td><?php $x = array("a" => 1, "b" => 2); $y = array("b" => 2, "a" => 1); var_dump($x === $y); ?></td>
-        </tr>
-        <tr>
-            <td>!=</td>
-            <td>Inequality</td>
-            <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x != $y); ?&gt;</code></td>
-            <td><?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x != $y); ?></td>
-        </tr>
-        <tr>
-            <td>&lt;&gt;</td>
-            <td>Inequality</td>
-            <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x <> $y); ?&gt;</code></td>
-            <td><?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x <> $y); ?></td>
-        </tr>
-        <tr>
-            <td>!==</td>
-            <td>Non-identity</td>
-            <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x !== $y); ?&gt;</code></td>
-            <td><?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x !== $y); ?></td>
-        </tr>
-    </table>
-</section>
-<section id="18">
-    <h3>PHP Ternary and Null Coalescing Operators</h3>
-    <table>
-        <tr>
-            <th>Operator</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>?:</td>
-            <td>Ternary</td>
-            <td><code>&lt;?php $expr1 = true; $x = $expr1 ? "expr2 result" : "expr3 result"; echo $x; ?&gt;</code></td>
-            <td><?php $expr1 = true; $x = $expr1 ? "expr2 result" : "expr3 result"; echo $x; ?></td>
-        </tr>
-        <tr>
-            <td>??</td>
-            <td>Null Coalescing</td>
-            <td><code>&lt;?php $expr1 = "exists"; $x = $expr1 ?? "default value"; echo $x; ?&gt;</code></td>
-            <td><?php $expr1 = "exists"; $x = $expr1 ?? "default value"; echo $x; ?></td>
-        </tr>
-    </table>
-</section>
-<section id="19">
-    <h3>PHP Conditional Statements</h3>
-    <table>
-        <tr>
-            <th>Statement</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>if</td>
-            <td>Executes code if a specified condition is true</td>
-            <td><code>&lt;?php $x = 5; if ($x > 0) { echo "Positive number"; } ?&gt;</code></td>
-            <td><?php $x = 5; if ($x > 0) { echo "Positive number"; } ?></td>
-        </tr>
-        <tr>
-            <td>else</td>
-            <td>Executes code if the specified condition of the if statement is false</td>
-            <td><code>&lt;?php $x = -5; if ($x > 0) { echo "Positive number"; } else { echo "Negative number or zero"; } ?&gt;</code></td>
-            <td><?php $x = -5; if ($x > 0) { echo "Positive number"; } else { echo "Negative number or zero"; } ?></td>
-        </tr>
-        <tr>
-            <td>elseif</td>
-            <td>Executes code if the previous condition is false and the specified condition is true</td>
-            <td><code>&lt;?php $x = 0; if ($x > 0) { echo "Positive number"; } elseif ($x < 0) { echo "Negative number"; } else { echo "Zero"; } ?&gt;</code></td>
-            <td><?php $x = 0; if ($x > 0) { echo "Positive number"; } elseif ($x < 0) { echo "Negative number"; } else { echo "Zero"; } ?></td>
-        </tr>
-        <tr>
-            <td>switch</td>
-            <td>Selects one of many blocks of code to be executed</td>
-            <td><code>&lt;?php $day = "Monday"; switch ($day) { case "Monday": echo "It's Monday!"; break; case "Tuesday": echo "It's Tuesday!"; break; default: echo "It's not Monday or Tuesday!"; } ?&gt;</code></td>
-            <td><?php $day = "Monday"; switch ($day) { case "Monday": echo "It's Monday!"; break; case "Tuesday": echo "It's Tuesday!"; break; default: echo "It's not Monday or Tuesday!"; } ?></td>
-        </tr>
-        <tr>
-            <td>?:</td>
-            <td>Ternary Operator - Short if-else statement</td>
-            <td><code>&lt;?php $x = 5; echo ($x > 0) ? "Positive number" : "Non-positive number"; ?&gt;</code></td>
-            <td><?php $x = 5; echo ($x > 0) ? "Positive number" : "Non-positive number"; ?></td>
-        </tr>
-    </table>
-</section>
-<section id="20">
-    <h3>PHP Nested If</h3>
-    <p>if statements inside if statements, this is called nested if statements.</p>
+        <h3>PHP Logical Opertators</h3>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>and</td>
+                <td>And</td>
+                <td><code>&lt;?php $x = true; $y = false; echo ($x and $y) ? 'true' : 'false'; ?&gt;</code></td>
+                <td><?php $x = true;
+                    $y = false;
+                    echo ($x and $y) ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>or</td>
+                <td>Or</td>
+                <td><code>&lt;?php $x = true; $y = false; echo ($x or $y) ? 'true' : 'false'; ?&gt;</code></td>
+                <td><?php $x = true;
+                    $y = false;
+                    echo ($x or $y) ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>xor</td>
+                <td>Xor</td>
+                <td><code>&lt;?php $x = true; $y = false; echo ($x xor $y) ? 'true' : 'false'; ?&gt;</code></td>
+                <td><?php $x = true;
+                    $y = false;
+                    echo ($x xor $y) ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>&&</td>
+                <td>And</td>
+                <td><code>&lt;?php $x = true; $y = false; echo ($x && $y) ? 'true' : 'false'; ?&gt;</code></td>
+                <td><?php $x = true;
+                    $y = false;
+                    echo ($x && $y) ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>||</td>
+                <td>Or</td>
+                <td><code>&lt;?php $x = true; $y = false; echo ($x || $y) ? 'true' : 'false'; ?&gt;</code></td>
+                <td><?php $x = true;
+                    $y = false;
+                    echo ($x || $y) ? 'true' : 'false'; ?></td>
+            </tr>
+            <tr>
+                <td>!</td>
+                <td>Not</td>
+                <td><code>&lt;?php $x = true; echo !$x ? 'true' : 'false'; ?&gt;</code></td>
+                <td><?php $x = true;
+                    echo !$x ? 'true' : 'false'; ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="17">
+        <h3>PHP Array Operators</h3>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Union</td>
+                <td><code>&lt;?php $x = array("a", "b", "c"); $y = array(1, 2, 3); print_r($x + $y); ?&gt;</code></td>
+                <td><?php $x = array("a", "b", "c");
+                    $y = array(1, 2, 3);
+                    print_r($x + $y); ?></td>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>Equality</td>
+                <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("b" => 2, "a" => 1); var_dump($x == $y); ?&gt;</code></td>
+                <td><?php $x = array("a" => 1, "b" => 2);
+                    $y = array("b" => 2, "a" => 1);
+                    var_dump($x == $y); ?></td>
+            </tr>
+            <tr>
+                <td>===</td>
+                <td>Identity</td>
+                <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("b" => 2, "a" => 1); var_dump($x === $y); ?&gt;</code></td>
+                <td><?php $x = array("a" => 1, "b" => 2);
+                    $y = array("b" => 2, "a" => 1);
+                    var_dump($x === $y); ?></td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>Inequality</td>
+                <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x != $y); ?&gt;</code></td>
+                <td><?php $x = array("a" => 1, "b" => 2);
+                    $y = array("c" => 3, "d" => 4);
+                    var_dump($x != $y); ?></td>
+            </tr>
+            <tr>
+                <td>&lt;&gt;</td>
+                <td>Inequality</td>
+                <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x <> $y); ?&gt;</code></td>
+                <td><?php $x = array("a" => 1, "b" => 2);
+                    $y = array("c" => 3, "d" => 4);
+                    var_dump($x <> $y); ?></td>
+            </tr>
+            <tr>
+                <td>!==</td>
+                <td>Non-identity</td>
+                <td><code>&lt;?php $x = array("a" => 1, "b" => 2); $y = array("c" => 3, "d" => 4); var_dump($x !== $y); ?&gt;</code></td>
+                <td><?php $x = array("a" => 1, "b" => 2);
+                    $y = array("c" => 3, "d" => 4);
+                    var_dump($x !== $y); ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="18">
+        <h3>PHP Ternary and Null Coalescing Operators</h3>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>?:</td>
+                <td>Ternary</td>
+                <td><code>&lt;?php $expr1 = true; $x = $expr1 ? "expr2 result" : "expr3 result"; echo $x; ?&gt;</code></td>
+                <td><?php $expr1 = true;
+                    $x = $expr1 ? "expr2 result" : "expr3 result";
+                    echo $x; ?></td>
+            </tr>
+            <tr>
+                <td>??</td>
+                <td>Null Coalescing</td>
+                <td><code>&lt;?php $expr1 = "exists"; $x = $expr1 ?? "default value"; echo $x; ?&gt;</code></td>
+                <td><?php $expr1 = "exists";
+                    $x = $expr1 ?? "default value";
+                    echo $x; ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="19">
+        <h3>PHP Conditional Statements</h3>
+        <table>
+            <tr>
+                <th>Statement</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>if</td>
+                <td>Executes code if a specified condition is true</td>
+                <td><code>&lt;?php $x = 5; if ($x > 0) { echo "Positive number"; } ?&gt;</code></td>
+                <td><?php $x = 5;
+                    if ($x > 0) {
+                        echo "Positive number";
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>else</td>
+                <td>Executes code if the specified condition of the if statement is false</td>
+                <td><code>&lt;?php $x = -5; if ($x > 0) { echo "Positive number"; } else { echo "Negative number or zero"; } ?&gt;</code></td>
+                <td><?php $x = -5;
+                    if ($x > 0) {
+                        echo "Positive number";
+                    } else {
+                        echo "Negative number or zero";
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>elseif</td>
+                <td>Executes code if the previous condition is false and the specified condition is true</td>
+                <td><code>&lt;?php $x = 0; if ($x > 0) { echo "Positive number"; } elseif ($x < 0) { echo "Negative number" ; } else { echo "Zero" ; } ?&gt;</code>
+                </td>
+                <td><?php $x = 0;
+                    if ($x > 0) {
+                        echo "Positive number";
+                    } elseif ($x < 0) {
+                        echo "Negative number";
+                    } else {
+                        echo "Zero";
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>switch</td>
+                <td>Selects one of many blocks of code to be executed</td>
+                <td><code>&lt;?php $day = "Monday"; switch ($day) { case "Monday": echo "It's Monday!"; break; case "Tuesday": echo "It's Tuesday!"; break; default: echo "It's not Monday or Tuesday!"; } ?&gt;</code></td>
+                <td><?php $day = "Monday";
+                    switch ($day) {
+                        case "Monday":
+                            echo "It's Monday!";
+                            break;
+                        case "Tuesday":
+                            echo "It's Tuesday!";
+                            break;
+                        default:
+                            echo "It's not Monday or Tuesday!";
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>?:</td>
+                <td>Ternary Operator - Short if-else statement</td>
+                <td><code>&lt;?php $x = 5; echo ($x > 0) ? "Positive number" : "Non-positive number"; ?&gt;</code></td>
+                <td><?php $x = 5;
+                    echo ($x > 0) ? "Positive number" : "Non-positive number"; ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="20">
+        <h3>PHP Nested If</h3>
+        <p>if statements inside if statements, this is called nested if statements.</p>
 
-</section>
-<section id="21">
-    <h3>PHP Loops</h3>
-    <table>
+    </section>
+    <section id="21">
+        <h3>PHP Loops</h3>
+        <table>
+            <tr>
+                <th>Loop</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>while</td>
+                <td>Executes code as long as a specified condition is true</td>
+                <td><code>&lt;?php $i = 1; while ($i <= 5) { echo $i . " " ; $i++; } ?&gt;</code>
+                </td>
+                <td><?php $i = 1;
+                    while ($i <= 5) {
+                        echo $i . " ";
+                        $i++;
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>do-while</td>
+                <td>Executes code at least once and then as long as a specified condition is true</td>
+                <td><code>&lt;?php $i = 1; do { echo $i . " "; $i++; } while ($i <= 5); ?&gt;</code>
+                </td>
+                <td><?php $i = 1;
+                    do {
+                        echo $i . " ";
+                        $i++;
+                    } while ($i <= 5); ?></td>
+            </tr>
+            <tr>
+                <td>for</td>
+                <td>Executes code a specified number of times</td>
+                <td><code>&lt;?php for ($i = 1; $i <= 5; $i++) { echo $i . " " ; } ?&gt;</code>
+                </td>
+                <td><?php for ($i = 1; $i <= 5; $i++) {
+                        echo $i . " ";
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>foreach</td>
+                <td>Iterates over arrays</td>
+                <td><code>&lt;?php $colors = array("red", "green", "blue"); foreach ($colors as $color) { echo $color . " "; } ?&gt;</code></td>
+                <td><?php $colors = array("red", "green", "blue");
+                    foreach ($colors as $color) {
+                        echo $color . " ";
+                    } ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="22">
+        <h3>PHP Break and Continue </h3>
+        <table>
+            <tr>
+                <th>Statement</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>break</td>
+                <td>Terminates the execution of the nearest loop or switch</td>
+                <td><code>&lt;?php for ($i = 1; $i <= 5; $i++) { if ($i==3) { break; } echo $i . " " ; } ?&gt;</code>
+                </td>
+                <td><?php for ($i = 1; $i <= 5; $i++) {
+                        if ($i == 3) {
+                            break;
+                        }
+                        echo $i . " ";
+                    } ?></td>
+            </tr>
+            <tr>
+                <td>continue</td>
+                <td>Skips the rest of the current loop iteration and continues with the next one</td>
+                <td><code>&lt;?php for ($i = 1; $i <= 5; $i++) { if ($i==3) { continue; } echo $i . " " ; } ?&gt;</code>
+                </td>
+                <td><?php for ($i = 1; $i <= 5; $i++) {
+                        if ($i == 3) {
+                            continue;
+                        }
+                        echo $i . " ";
+                    } ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="23">
+        <h3>PHP Functions</h3>
+        <p>Besides the built-in PHP functions, it is possible to create your own functions.
+            <br>
+            A function is a block of statements that can be used repeatedly in a program.
+            <br>A function will not execute automatically when a page loads.
+            <br>A function will be executed by a call to the function.
+            <br><b>Create a Function</b><br>
+            A user-defined function declaration starts with the keyword function, followed by the name of the function<br>
+            <code>function myMessage() {
+                echo "Hello world!";
+                }</code>
+            <br>
+            <b>Call a Function</b><br>
+            <code>function myMessage() {
+                echo "Hello world!";
+                }
+
+                myMessage();</code>
+            <br><b>Function Arguments</b><br>
+            Information can be passed to functions through arguments. An argument is just like a variable.
+            Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.<br>
+            <?php
+            // Function to check if a number is odd or even
+            function checkOddEven($number)
+            {
+                if ($number % 2 == 0) {
+                    return "Even";
+                } else {
+                    return "Odd";
+                }
+            }
+
+            // Test the function with a number
+            $testNumber = 8;
+            $result = checkOddEven($testNumber);
+
+            // Output the result
+            echo "The number $testNumber is $result.";
+            ?>
+        </p>
+    </section>
+    <section id="24">
+        <h3>PHP Arrays</h3>
+        <p>An array stores multiple values in one single variable.<br>
+            An array is a special variable, which can hold more than one value at a time.
+            <br><b>Create an Array in PHP</b><br>
+            the array() function is used to create an array<br>
+            Three Types of Arrays in PHP<br>
+            Indexed arrays - Arrays with a numeric index<br>
+            Associative arrays - Arrays with named keys<br>
+            Multidimensional arrays - Arrays containing one or more arrays<br>
+        </p>
+
+        <table>
+            <tr>
+                <th>Operation</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>Defining an Array</td>
+                <td><code>$fruits = ["Apple", "Banana", "Orange"];</code></td>
+                <td><?php $fruits = ["Apple", "Banana", "Orange"];
+                    echo implode($fruits); ?></td>
+            </tr>
+            <tr>
+                <td>Accessing Array Elements</td>
+                <td><code>echo $fruits[0];</code></td>
+                <td><?php echo $fruits[0]; ?></td>
+            </tr>
+            <tr>
+                <td>Modifying Array Elements</td>
+                <td><code>$fruits[1] = "Mango";</code></td>
+                <td><?php $fruits[1] = "Mango";
+                    echo implode(", ", $fruits); ?></td>
+            </tr>
+            <tr>
+                <td>Associative Arrays are arrays that use named keys that you assign to them.</td>
+                <td><code>$person = ["name" => "John", "age" => 30];</code></td>
+                <td><?php $person = ["name" => "John", "age" => 30];
+                    echo implode(", ", $person); ?></td>
+            </tr>
+            <tr>
+                <td>Array Count</td>
+                <td><code>$length = count($fruits);</code></td>
+                <td><?php $length = count($fruits);
+                    echo $length; ?></td>
+            </tr>
+        </table>
+        <p>
+            <b>Multidimensional Arrays</b><br>A multidimensional array is an array containing one or more arrays
+            <br>
+            <b>Sorting Arrays</b><br>
+            The elements in an array can be sorted in alphabetical or numerical order, descending or ascending
+        </p>
+        <table>
+            <tr>
+                <th>Function</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>sort()</td>
+                <td><code>$numbers = [4, 2, 8, 1, 6];<br>sort($numbers);</code></td>
+                <td><?php $numbers = [4, 2, 8, 1, 6];
+                    sort($numbers);
+                    echo implode(", ", $numbers); ?></td>
+            </tr>
+            <tr>
+                <td>rsort()</td>
+                <td><code>$numbers = [4, 2, 8, 1, 6];<br>rsort($numbers);</code></td>
+                <td><?php $numbers = [4, 2, 8, 1, 6];
+                    rsort($numbers);
+                    echo implode(", ", $numbers); ?></td>
+            </tr>
+            <tr>
+                <td>asort()</td>
+                <td><code>$fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];<br>asort($fruits);</code></td>
+                <td><?php $fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];
+                    asort($fruits);
+                    print_r($fruits); ?></td>
+            </tr>
+            <tr>
+                <td>ksort()</td>
+                <td><code>$fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];<br>ksort($fruits);</code></td>
+                <td><?php $fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];
+                    ksort($fruits);
+                    print_r($fruits); ?></td>
+            </tr>
+            <tr>
+                <td>arsort()</td>
+                <td><code>$fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];<br>arsort($fruits);</code></td>
+                <td><?php $fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];
+                    arsort($fruits);
+                    print_r($fruits); ?></td>
+            </tr>
+            <tr>
+                <td>krsort()</td>
+                <td><code>$fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];<br>krsort($fruits);</code></td>
+                <td><?php $fruits = ["Apple" => 3, "Banana" => 1, "Orange" => 2];
+                    krsort($fruits);
+                    print_r($fruits); ?></td>
+            </tr>
+        </table>
+    </section>
+    <section id="25">
+        <h3>PHP Global Variables - Superglobals</h3>
+        <p>Some predefined variables in PHP are "superglobals", which means that they are always accessible, regardless of scope - and you can access them from any function, class or file without having to do anything special.</p>
+        <table>
+            <tr>
+                <th>Global Array</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>$GLOBALS</td>
+                <td>Associative array containing all global variables</td>
+                <td><code>$GLOBALS['variable_name']</code></td>
+            </tr>
+            <tr>
+                <td>$_SERVER</td>
+                <td>Server and execution environment information</td>
+                <td><code>$_SERVER['HTTP_USER_AGENT']</code></td>
+            </tr>
+            <tr>
+                <td>$_REQUEST</td>
+                <td>Combined $_GET, $_POST, and $_COOKIE</td>
+                <td><code>$_REQUEST['parameter']</code></td>
+            </tr>
+            <tr>
+                <td>$_POST</td>
+                <td>Form data sent with POST method</td>
+                <td><code>$_POST['field_name']</code></td>
+            </tr>
+            <tr>
+                <td>$_GET</td>
+                <td>Form data sent with GET method</td>
+                <td><code>$_GET['parameter']</code></td>
+            </tr>
+            <tr>
+                <td>$_FILES</td>
+                <td>Uploaded file information</td>
+                <td><code>$_FILES['file_field']['name']</code></td>
+            </tr>
+            <tr>
+                <td>$_ENV</td>
+                <td>Environment variables</td>
+                <td><code>$_ENV['variable_name']</code></td>
+            </tr>
+            <tr>
+                <td>$_COOKIE</td>
+                <td>Client-side cookies</td>
+                <td><code>$_COOKIE['cookie_name']</code></td>
+            </tr>
+            <tr>
+                <td>$_SESSION</td>
+                <td>User session variables</td>
+                <td><code>$_SESSION['user_data']</code></td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section id="26">
+        <h3>PHP Regular Expressions</h3>
+        <p>A regular expression is a sequence of characters that forms a search pattern. When you search for data in a text, you can use this search pattern to describe what you are searching for.
+            A regular expression can be a single character, or a more complicated pattern.
+            Regular expressions can be used to perform all types of text search and text replace operations.</p>
+            <table>
         <tr>
-            <th>Loop</th>
+            <th>Function</th>
             <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
         </tr>
         <tr>
-            <td>while</td>
-            <td>Executes code as long as a specified condition is true</td>
-            <td><code>&lt;?php $i = 1; while ($i <= 5) { echo $i . " "; $i++; } ?&gt;</code></td>
-            <td><?php $i = 1; while ($i <= 5) { echo $i . " "; $i++; } ?></td>
+            <td>preg_match()</td>
+            <td>Returns 1 if the pattern was found in the string and 0 if not</td>
         </tr>
         <tr>
-            <td>do-while</td>
-            <td>Executes code at least once and then as long as a specified condition is true</td>
-            <td><code>&lt;?php $i = 1; do { echo $i . " "; $i++; } while ($i <= 5); ?&gt;</code></td>
-            <td><?php $i = 1; do { echo $i . " "; $i++; } while ($i <= 5); ?></td>
+            <td>preg_match_all()</td>
+            <td>Returns the number of times the pattern was found in the string, which may also be 0</td>
         </tr>
         <tr>
-            <td>for</td>
-            <td>Executes code a specified number of times</td>
-            <td><code>&lt;?php for ($i = 1; $i <= 5; $i++) { echo $i . " "; } ?&gt;</code></td>
-            <td><?php for ($i = 1; $i <= 5; $i++) { echo $i . " "; } ?></td>
-        </tr>
-        <tr>
-            <td>foreach</td>
-            <td>Iterates over arrays</td>
-            <td><code>&lt;?php $colors = array("red", "green", "blue"); foreach ($colors as $color) { echo $color . " "; } ?&gt;</code></td>
-            <td><?php $colors = array("red", "green", "blue"); foreach ($colors as $color) { echo $color . " "; } ?></td>
+            <td>preg_replace()</td>
+            <td>Returns a new string where matched patterns have been replaced with another string</td>
         </tr>
     </table>
-</section>
-<section id="22">
-    <h3>PHP Break and Continue </h3>
-    <table>
-        <tr>
-            <th>Statement</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>break</td>
-            <td>Terminates the execution of the nearest loop or switch</td>
-            <td><code>&lt;?php for ($i = 1; $i <= 5; $i++) { if ($i == 3) { break; } echo $i . " "; } ?&gt;</code></td>
-            <td><?php for ($i = 1; $i <= 5; $i++) { if ($i == 3) { break; } echo $i . " "; } ?></td>
-        </tr>
-        <tr>
-            <td>continue</td>
-            <td>Skips the rest of the current loop iteration and continues with the next one</td>
-            <td><code>&lt;?php for ($i = 1; $i <= 5; $i++) { if ($i == 3) { continue; } echo $i . " "; } ?&gt;</code></td>
-            <td><?php for ($i = 1; $i <= 5; $i++) { if ($i == 3) { continue; } echo $i . " "; } ?></td>
-        </tr>
-    </table>
-</section>
-<section id="">
-    <h3></h3>
-    <p></p>
-</section>
-<section id="">
-    <h3></h3>
-    <p></p>
-</section>
-<section id="">
-    <h3></h3>
-    <p></p>
-</section>
+        </section>
+    <section id="">
+        <h3></h3>
+        <p></p>
+    </section>
     <!-- <section id="">
     <h3></h3>
     <p></p>
