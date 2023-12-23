@@ -7,7 +7,6 @@
 </head>
 <body>
     <h2>getdate Function Example</h2>
-
     <?php
     // Get the current date and time information as an associative array
     $dateInfo = getdate();
